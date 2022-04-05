@@ -1,0 +1,17 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "alwaysStrict": true,
+        "charset": "UTF-8",
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "newLine": "LF",
+        "preserveConstEnums": true,
+        "removeComments": true,
+        "target": "ESNext",
+        "incremental": true
+    },
+    "include": ["src", "./*.ts"],
+    "exclude": ["node_modules", "dist"]
+}
