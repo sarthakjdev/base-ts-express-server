@@ -1,11 +1,11 @@
 import express from 'express'
 
-// contollers for organisation route:
+// contollers for basic route:
 import controller from '../controllers/basic.controller'
 
 const router = express.Router() // creating router
 
 /// setting up further route for basic route
-router.get('/', controller.getBasic) // to create a neew user or signup
+router.get('/', controller.getBasic) 
 
 export default router
