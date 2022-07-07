@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import messages from '../constants/messages'
+import messages from '@constants/messages'
 
 export default class UserController {
     /**

@@ -10,8 +10,26 @@
         "preserveConstEnums": true,
         "removeComments": true,
         "target": "ESNext",
-        "incremental": true
+        "incremental": true,
+        "baseUrl": "./",
+        "resolveJsonModule": true,
+        "paths": {
+            "@controllers/*": ["./src/controllers/*"],
+            "@constants/*": ["./src/constants/*"],
+            "@routes/*":["./src/routes/*"],
+            "@configs/*": ["./src/configs/*"],
+            "@utils/*": ["./src/utils/*"],
+            "@helpers/*": ["./src/helpers/*"],
+            "@lib/*": ["./src/lib/*"],
+            "@factory/*" :["./src/models/factory/*"],
+            "@middleware/*": ["./src/middleware/*"],
+            "@services/*": ["./src/services/*"]
+        },
+        "typeRoots": ["./global.d.ts"]
     },
-    "include": ["src", "./*.ts"],
+    "ts-node": {
+        "files": true
+    },
+    "include": ["src", "./*.ts", "global.d.ts", "prod-paths.js", "*.env" , "swagger_output.json"],
     "exclude": ["node_modules", "dist"]
 }

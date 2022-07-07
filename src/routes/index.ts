@@ -1,5 +1,5 @@
 import express from 'express'
-import basicRoute from './basic.route'
+import basicRoute from '@routes/basic'
 
 const router = express.Router()
 
